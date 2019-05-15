@@ -119,7 +119,7 @@ readonly MARGIN_PAD_W=2
 readonly MARGINS_PAD_W=$(( $MARGIN_PAD_W * 2 ))
 readonly ALL_PADDING_W=$(( $INNER_PADDING_W + $MARGINS_PAD_W ))
 readonly MAX_DIVERGENCE_W=12 # e.g. "(behind 999)"
-readonly MIN_TTY_W=60 # ASSERT: (0 < ($ALL_PADDING_W + (MAX_DIVERGENCE_W * 2)) <= $MIN_TTY_W)
+readonly MIN_TTY_W=60 # ASSERT: (0 < (ALL_PADDING_W + (MAX_DIVERGENCE_W * 2)) <= MIN_TTY_W)
 readonly MARGIN_PAD=$(printf "%$(( $MARGIN_PAD_W ))s")
 readonly CWHITE='\033[0;37m'
 readonly CRED='\033[0;31m'
